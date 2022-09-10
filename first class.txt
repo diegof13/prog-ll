@@ -1,0 +1,38 @@
+#include<iostream>
+
+using namespace std;
+
+class Car {
+	int age;
+	string type;
+	long value;
+public:
+	Car(int _age, string _type, long _value) {
+		age = _age;
+		type = _type;
+		value = _value;
+	}
+	void model() {
+		cout << " " << type;
+	}
+	void year() {
+		cout << "\nThis is a " << age;
+	}
+	void price() {
+		cout << " and its price is " << value;
+	}
+};
+
+int main() {
+	Car c1(2013, "Dodge dart", 7500);
+	c1.year();
+	c1.model();
+	c1.price();
+
+	Car c2(2009, "F-150 FORD", 11000);
+	c2.year();
+	c2.model();
+	c2.price();
+
+	return 0;
+}
